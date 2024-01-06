@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(227, 197, 103);
+}
+
+h1 {
+    background-color: rgb(87, 61, 28);
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 165px;
+    width: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    /* border: 10px solid blue;
+    border-radius: 50%;
+    padding-bottom: 0px; */
+    /* opacity: 0.5; */
+    background-color: black;
+    cursor: pointer;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.scoreBoard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightblue; */
+    /* background-color: rgb(217, 174, 97); */
+    font-size: 2rem;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+#userScore,
+#compScore {
+    font-size: 4rem;
+}
+
+#msg {
+    margin-top: 5rem;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgb(200, 150, 62);
+    border-radius: 1rem;
+}
+
+.butn {
+    padding-top: 10px;
+    font-size: 30px;
+    border: none;
+    height: 3vw;
+    background-color: rgb(225, 109, 15);
+    margin-top: 20px;
+    width: 160px;
+    border-radius: 6%;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        /* background-color: red; */
+
+    }
+
+    img {
+        margin-top: 0px;
+        margin-left: 0px;
+        height: 30vw;
+        width: 90%;
+        /* object-fit: cover; */
+        border-radius: 50%;
+    }
+
+    .choices {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 5rem;
+        gap: 0px;
+    }
+
+    .choice {
+        height: 31vw;
+        width: 90%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choice:hover {
+        border: 10px solid blue;
+        border-radius: 50%;
+        padding-bottom: 0px;
+        /* opacity: 0.5; */
+        /* background-color: black;
+        cursor: pointer;
+        height: 70%;
+        width: 50%; */
+    }
+
+    .butn {
+        padding: 0px;
+        height: 20vw;
+        margin-top: 2%;
+    }
+
+    #msg {
+        font-size: 2rem;
+    }
+}
